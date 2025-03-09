@@ -23,10 +23,13 @@ io.on('connection', (socket) => {
     //usando io (servidor) para mostrar message a todos que estão conectados no socket
     io.emit('show-message', data)
   })
-
-
 })
 
+app.set('view engine', 'ejs')
+
+app.get('/', (req,res)=>{
+  res.render('index')
+})
 
 http.listen(3000, () => {
   console.log('APP RUNNING PORT:3000')
