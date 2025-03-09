@@ -1,0 +1,19 @@
+{
+  "name": "chat-socket.io-node",
+  "version": "1.0.0",
+  "description": "Create a minimal chat application with Node.j, socket.io, express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devmon": "nodemon ./app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
